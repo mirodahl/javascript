@@ -74,3 +74,20 @@ function numbersrep(){
      //       numberArray.push(number);
    //     }
  //   }while(!(isNaN(numbersrep)));}
+
+//2.10 - palautuksen jälkeen lisätty
+let ehdokkaat = [] //tyhjä taulukko
+
+let ehdokasLkm = +prompt("Kuinka monta ehdokasta?") //kysytään ehdokasmäärä
+
+//for-rakenteessa kysytään ehdokkaan nimi
+//luodaan uusi ehdokas-tietorakenne ja lisätään se ehdokkaat-taulukkoon
+for (let i = 1; i <= ehdokasLkm; i++) {
+    let nimi = prompt("Anna ehdokkaan nro "+i+"nimi:")
+    //luodaab uusi tietorakenne ehdokasta varten
+    let ehdokas = {
+        name: nimi,
+        votes: 0,
+    }
+    ehdokkaat.push(ehdokas) //lisätään luotu ehdokas taulukkoon
+}
