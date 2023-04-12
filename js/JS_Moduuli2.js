@@ -14,23 +14,32 @@ for (let i = nums.length - 1; i >= 0; i--) {
     console.log(nums[i]);
 }
 //2.3 2p
-const doge = [];
+const dogeArray = [];
+const reverse_dogeArray = dogeArray.reverse();
+
 const dog1 = prompt("Give first dog name:");
 const dog2 = prompt("Give second dog name:");
 const dog3 = prompt("Give third dog name:");
 const dog4 = prompt("Give fourth dog name:");
 const dog5 = prompt("Give fifth dog name:");
 const dog6 = prompt("Give sixth dog name:");
-doge.push(dog1)
-doge.push(dog2)
-doge.push(dog3)
-doge.push(dog4)
-doge.push(dog5)
-doge.push(dog6)
+dogeArray.push(dog1)
+dogeArray.push(dog2)
+dogeArray.push(dog3)
+dogeArray.push(dog4)
+dogeArray.push(dog5)
+dogeArray.push(dog6)
+
+let reverse_doge = document.getElementById(reverseDoge);
+reverse_dogeArray.forEach((item)=>{
+    let dogee = document.createElement("reverseDoge");
+    dogee.innerText = item;
+    reverse_doge.appendChild(li);
+})
 //2.4 2p
 function numbers(){
     var numbers = 0;
-    const outMessage = "";
+    const outmsg = "";
     const numbersArray = new Array(numbers);
 
     do{
@@ -44,3 +53,24 @@ function numbers(){
 
     console.log(numbersArray);
     }
+    //2.5 2p
+function numbersrep(){
+    var number = 0;
+    const outmsg = "";
+    const numberArray = new Array(number);
+    continuing = true
+
+    while (continuing) = true {
+        numbersrep = prompt
+    }
+}
+
+  //  do {
+  //      number = prompt('press 0 to cancel', 0);
+ //       if (numberArray.includes(number)) {
+           // console.log(numberArray);
+         //   break;
+       // } else {
+     //       numberArray.push(number);
+   //     }
+ //   }while(!(isNaN(numbersrep)));}
