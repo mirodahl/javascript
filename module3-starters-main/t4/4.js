@@ -23,9 +23,16 @@ const students = [
 
 const targetElement = document.querySelector('#target');       // get element named target
 
-const stud = document.createElement("option")
-stud.innerHTML = John
-stud.innerHTML = Paul
-stud.innerHTML = Jones
 
 targetElement.appendChild(stud)
+
+for (let i = 0; i < students.length; i++) {
+
+  const stud = document.createElement("option")
+
+    let text = students[i].name;
+
+      let listItem = document.createElement("option");
+      listItem.textContent = text;
+      targetElement.appendChild(listItem);
+  }
