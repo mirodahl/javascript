@@ -21,3 +21,9 @@ list3.appendChild(text3)
 targetElement.appendChild(list1)
 targetElement.appendChild(list2)
 targetElement.appendChild(list3)
+
+//lisätään css vain yhteen listaelementtiin
+//jos .innerhtml-tekniikalla niin tee näin
+const allListElements = document.querySelectorAll('li')
+const list2elem = allListElements[1]
+list2elem.classList.add("my-item")
