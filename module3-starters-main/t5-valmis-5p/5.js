@@ -93,3 +93,51 @@ const picArray = [
 ];
 
 // add your code here
+
+const targetElement = document.getElementById("pictures")
+
+targetElement.innerHTML = `
+<article class="card">
+   <h2>Title 1</h2>
+   <figure>
+      <img src="thumbnails/pic1.jpg" alt="title_from_picArray">
+      <figcaption>Caption 1</figcaption>
+   </figure>
+   <p>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sodales enim eget leo condimentum vulputate. Sed lacinia consectetur fermentum. Vestibulum lobortis purus id nisi mattis posuere. Praesent sagittis justo quis nibh ullamcorper, eget elementum lorem consectetur. Pellentesque eu consequat justo, eu sodales eros.',
+</p>
+</article>
+<article class="card">
+   <h2>Title 3</h2>
+   <figure>
+      <img src="thumbnails/pic3.jpg" alt="title_from_picArray">
+      <figcaption>Caption 3</figcaption>
+   </figure>
+   <p>'Phasellus imperdiet nunc tincidunt molestie vestibulum. Donec dictum suscipit nibh. Sed vel velit ante. Aenean quis viverra magna. Praesent eget cursus urna. Ut rhoncus interdum dolor non tincidunt. Sed vehicula consequat facilisis. Pellentesque pulvinar sem nisl, ac vestibulum erat rhoncus id. ',
+</p>
+</article>
+<article class="card">
+   <h2>Title 5</h2>
+   <figure>
+      <img src="thumbnails/pic5.jpg" alt="title_from_picArray">
+      <figcaption>Caption 5</figcaption>
+   </figure>
+   <p>'Sed vel velit ante. Aenean quis viverra magna. Praesent eget cursus urna. Ut rhoncus interdum dolor non tincidunt. Sed vehicula consequat facilisis. Pellentesque pulvinar sem nisl, ac vestibulum erat rhoncus id. Vestibulum tincidunt sapien eu ipsum tincidunt pulvinar. Donec dignissim tincidunt nisl, non scelerisque massa pharetra ut. ',
+</p>
+</article>
+    `
+
+
+
+
+//Open t5-valmis-5p folder in your IDE/editor.
+// Create multiple <article> elements that contain heading, image, image caption and text
+// and populate them with the data from picArray. Add the articles to the <section> element. (5p)
+// The structure of the articles should be this:
+// <article class="card">
+//    <h2>title_from_picArray</h2>
+//    <figure>
+//       <img src="medium_image_from_picArray" alt="title_from_picArray">
+//       <figcaption>caption_from_picarray</figcaption>
+//    </figure>
+//    <p>description_from_picArray</p>
+// </article>
