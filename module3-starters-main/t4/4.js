@@ -20,3 +20,12 @@ const students = [
 // <option value="2345768">John</option>
 // <option value="2134657">Paul</option>
 // <option value="5423679">Jones</option>
+
+const targetElement = document.querySelector('#target');       // get element named target
+
+const stud = document.createElement("option")
+stud.innerHTML = John
+stud.innerHTML = Paul
+stud.innerHTML = Jones
+
+targetElement.appendChild(stud)
