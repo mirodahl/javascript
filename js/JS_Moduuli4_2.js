@@ -30,21 +30,3 @@ tvForm.addEventListener('submit', async function (evt) {
     console.log(error.message);
   }
 });
-
-//4.3
-
-//4.4
-
-//4.5
-const randomChuckNorrisJoke = () => {
-
-    fetch('https://api.chucknorris.io/jokes/random')
-    .then((data) => { return data.json(); })
-    .then((json) => { console.log(json.value); })
-    .catch((error) => { console.error(error); });
-};
-
-randomChuckNorrisJoke();
-//4.6
-
-//4.7
