@@ -1,12 +1,37 @@
 'use strict'
 
-const randomChuckNorrisJoke = () => {
+const hakuAlku = "https://api.chucknorris.io/jokes/search?query="
+const tulosAlue = document.querySelector("#results")
+const tvForm = document.querySelector('#chuck');
 
-    fetch('https://api.chucknorris.io/jokes/random')
-    .then((data) => { return data.json(); })
-    .then((json) => { console.log(json.value); })
-    .catch((error) => { console.error(error); });
-};
+tvForm.addEventListener('submit', async function (evt) {
+  evt.preventDefault();
+  const hakuArvo = document.querySelector('input[name=query]').value;
+  const hakuLause = hakuAlku + hakuArvo
+  console.log("-- Hakulause: " + hakuLause)
 
-randomChuckNorrisJoke();
+  try {
+    const response = await fetch(
+      hakuLause
+    );
+    const jsonData = await response.json();
+    console.log(jsonData);
 
+    tulosAlue.innerHTML = ``
+
+    for (const value of jsonData.result) {
+      console.log(value)
+      console.log(jsonData)
+
+        let articleElem = document.createElement('article')
+        let paragElem = document.createElement('p')
+        paragElem.innerHTML = jsonData.result[value];
+      console.log(paragElem)
+        articleElem.appendChild(paragElem)
+        tulosAlue.append(articleElem)
+    }
+
+  } catch (error) {
+    console.log(error.message);
+  }
+});
