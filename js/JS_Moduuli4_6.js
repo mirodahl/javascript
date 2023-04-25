@@ -22,6 +22,7 @@ tvForm.addEventListener('submit', async function (evt) {
     for (const value of jsonData.result) {
       console.log(value)
       //console.log(jsonData)
+        alert(jsonData.result.value);
 
         let articleElem = document.createElement('article')
         let paragElem = document.createElement('p')
